@@ -21,33 +21,39 @@
       </nav>
     </header>
     <main>
-      <section id="form-section">
-        <form name="consultarCriterioMinimo">
-          <div>
-            <div>
-              <label for="departamento"></label>
+      <section id="form-section" class="form-container">
+        <div class="card-form">
+          <form name="consultarCriterioMinimo">
+            <div class="form-control">
+              <label for="departamento">Departamento</label>
               <input
                 name="departamento"
                 id="departamento"
+                class="form-input"
                 type="text"
                 placeholder="Selecione o departamento"
               />
+              <div class="error-message">Campo requerido</div>
             </div>
-            <div>
-              <label for="mercado"></label>
+            <div class="form-control">
+              <label for="mercado">Mercado</label>
               <input
                 name="mercado"
                 id="mercado"
+                class="form-input"
                 type="text"
                 placeholder="Selecione o mercado"
+                disabled
               />
+              <div class="error-message">Campo requerido</div>
             </div>
-          </div>
-          <div>
-            <button type="submit">Consultar </button>
-            <button>Limpar</button>
-          </div>
-        </form>
+
+            <div class="btn-container">
+              <button class = "btn btn-left" type="submit">Consultar</button>
+              <button class="btn btn-right">Limpar</button>
+            </div>
+          </form>
+        </div>
       </section>
       <section id="list-section">
         <div>
